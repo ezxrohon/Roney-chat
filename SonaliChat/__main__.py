@@ -5,7 +5,7 @@
  
 # 📩 DM for permission : @TheSigmaCoder
 # =======================================================
-import keep_alive
+from SonaliChat import keep_alive
 keep_alive.keep_alive()
 
 import importlib
