@@ -4,16 +4,7 @@
 # This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
  
 # 📩 DM for permission : @TheSigmaCoder
-# ======================================================
-try:
-    from .. import keep_alive.py
-    keep_alive.keep_alive()
-except (ImportError, ValueError):
-    try:
-        import keep_alive
-        keep_alive.keep_alive()
-    except Exception as e:
-        print(f"Keep alive failed to start: {e}")
+# ================================================
      
 import time
 import logging
