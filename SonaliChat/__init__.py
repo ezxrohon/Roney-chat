@@ -4,19 +4,17 @@
 # This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
  
 # 📩 DM for permission : @TheSigmaCoder
-# ======================================================import sys
-import os
-
-# Dynamically force Python to check the root directory for keep_alive.py
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
+# ======================================================
 try:
-    import keep_alive
+    from .. import keep_alive
     keep_alive.keep_alive()
-except Exception as e:
-    print(f"Keep alive failed to start: {e}")
- 
-
+except (ImportError, ValueError):
+    try:
+        import keep_alive
+        keep_alive.keep_alive()
+    except Exception as e:
+        print(f"Keep alive failed to start: {e}")
+     
 import time
 import logging
 
