@@ -6,7 +6,7 @@
 # 📩 DM for permission : @TheSigmaCoder
 # ======================================================
 try:
-    from .. import keep_alive
+    from .. import keep_alive.py
     keep_alive.keep_alive()
 except (ImportError, ValueError):
     try:
