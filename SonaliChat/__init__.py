@@ -5,6 +5,8 @@
  
 # 📩 DM for permission : @TheSigmaCoder
 # =======================================================
+import keep_alive
+keep_alive.keep_alive()
 
 import time
 import logging
